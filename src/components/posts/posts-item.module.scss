@@ -1,0 +1,50 @@
+.post {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+
+  .content {
+    h2 {
+      margin: 0.5rem 0;
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: #332200;
+      transition: color 0.3s ease;
+    }
+
+    .image {
+      position: relative;
+      aspect-ratio: 16 / 7;
+      img {
+        object-fit: cover;
+      }
+    }
+
+    p {
+      margin: 0.5rem 0;
+      font-size: 1rem;
+      color: #222;
+      // 超過三行...
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      line-clamp: 3; // 行數
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+
+    time {
+      font-size: 0.8rem;
+      color: #222;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    a:hover h2 {
+      text-decoration: underline;
+      color: #b3a79b;
+    }
+  }
+}
